@@ -1,6 +1,6 @@
 Specifications:
 - Battery Life: 12 hrs usage / 27 hrs standby
-- # of Connected Devices: 10 Wi-Fi
+- Number of Connected Devices: 10 Wi-Fi
 - Networks supported:
 - LTE Bands: 25, 26, 41 (aka "Sprint Spark") - hardware also supports 2, 4, 5, 12
 - 3G: Yes
@@ -13,10 +13,13 @@ Specifications:
 
 Antenna Notes:
 - Oficially no antenna jacks.
-- R910 has small black stickers covering what appear to be 6 CRC9 or TS9 female connectors. 
+- R910 has small black stickers covering 6 TS9 female connectors. 
 - These are around the perimeter of the device, not under the battery or label. 
-- These may only be test points but it is worth checking.
-
+- the plastic surround of the device contains small antennas that are connected to pads next to these ports.
+- ports are labeled in pairs: 1708 MAIN, 1708 DIV, B41 MAIN, B41 DIV
+- Plugging an antenna into two of the matched pairs does increase the signal (RSSI and RSRQ)
+- View signal values at http://192.168.128.1/hidden/debug-lte_engineering.html
+- To make connections with the TS9, I needed to drill out plastic surrounds with 1/4 inch drill.  
 
 
 Sources:
