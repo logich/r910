@@ -19,7 +19,8 @@ Antenna Notes:
 - ports are labeled in pairs: 1708 MAIN, 1708 DIV, B41 MAIN, B41 DIV
 - Plugging an antenna into two of the matched pairs does increase the signal (RSSI and RSRQ)
 - View signal values at http://192.168.128.1/hidden/debug-lte_engineering.html
-- To make connections with the TS9, I needed to drill out plastic surrounds with 1/4 inch drill.  
+- To make connections with the TS9, I needed to drill out plastic surrounds with 1/4 inch drill.
+- Placing a $20 panel antenna on an old satelite disk and directing this at the tower increase signal strength ![sat dish jury rig](Image 6.png) 
 
 
 Sources:
