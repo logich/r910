@@ -17,6 +17,7 @@ Antenna Notes:
 - These are around the perimeter of the device, not under the battery or label. ![device diagram](/device-diagram.png)
 - the plastic surround of the device contains small antennas that are connected to pads next to these ports.
 - ports are labeled in pairs: 1708 MAIN, 1708 DIV, B41 MAIN, B41 DIV
+- B41 ports do not appear to improve signal for operation where I am. 
 - Plugging an antenna into two of the matched pairs does increase the signal (RSSI and RSRQ)
 - View signal values at http://192.168.128.1/hidden/debug-lte_engineering.html
 - To make connections with the TS9, I needed to drill out plastic surrounds with 1/4 inch drill.
