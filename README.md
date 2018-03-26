@@ -14,16 +14,21 @@ Specifications:
 Antenna Notes:
 - Oficially no antenna jacks.
 - R910 has small black stickers covering 6 TS9 female connectors. 
-- These are around the perimeter of the device, not under the battery or label. 
+- These are around the perimeter of the device, not under the battery or label. ![device diagram](/device-diagram.png)
 - the plastic surround of the device contains small antennas that are connected to pads next to these ports.
 - ports are labeled in pairs: 1708 MAIN, 1708 DIV, B41 MAIN, B41 DIV
 - Plugging an antenna into two of the matched pairs does increase the signal (RSSI and RSRQ)
 - View signal values at http://192.168.128.1/hidden/debug-lte_engineering.html
 - To make connections with the TS9, I needed to drill out plastic surrounds with 1/4 inch drill.
-- Placing a $20 panel antenna on an old satelite disk and directing this at the tower increase signal strength 
+- Placing a $20 panel antenna on an old satelite disk and directing this at the tower increase signal strength and speed.
 
-![sat dish jury rig](/Image 6.png) 
-
+Tethering Notes:
+- Set the USB mode for tethering under http://192.168.128.1/webpst/usb_mode.html and change to mode "RNDIS + DIAG + ADB [Android]"
+- This makes it look like a phone for tethering versus a dumb modem or usb stick.
+- Connect this to a super cheap GL.iNet mini router and configure it for tethering: https://www.gl-inet.com/docs/mini/3g4g/#phone-modem-tethering
+- Connect the upstream router to the GL.iNet LAN port and configure it to do DHCP
+- This will get an IP from the r910 directly versus double NAT.
+- Then MultiWAN can be configured on the main router.
 
 Sources:
 
