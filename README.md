@@ -27,7 +27,8 @@ Tethering Notes:
 - Set the USB mode for tethering under http://192.168.128.1/webpst/usb_mode.html and change to mode "RNDIS + DIAG + ADB [Android]"
 - This makes it look like a phone for tethering versus a dumb modem or usb stick.
 - Connect this to a super cheap GL.iNet mini router and configure it for tethering: https://www.gl-inet.com/docs/mini/3g4g/#phone-modem-tethering
-- Connect the upstream router to the GL.iNet LAN port and configure it to do DHCP
+- Go to advanced settings in the GL.iNet and add the eth0 WAN port to the WAN interface so that usb and eth0 are bridged together
+- Connect the upstream router to the GL.iNet WAN port and configure it to do DHCP
 - This will get an IP from the r910 directly versus double NAT.
 - Then MultiWAN can be configured on the main router.
 
